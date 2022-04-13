@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/moving.css" />
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Sansita+Swashed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- java -->
+    <link
+      rel="stylesheet"
+      href="css/flexslider.css"
+      type="text/css"
+      media="screen"
+    />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function () {
+        $("#carousel").flexslider({
+          animation: "slide",
+          controlNav: false,
+          animationLoop: false,
+          slideshow: false,
+          itemWidth: 210,
+          itemMargin: 5,
+          asNavFor: "#slider",
+        });
+        $("#slider").flexslider({
+          animation: "slide",
+          controlNav: false,
+          animationLoop: false,
+          slideshow: false,
+          sync: "#carousel",
+        });
+      });
+    </script>
+  </head>
+
+<div></div>
+
+  <body>
+    <section id="top">
+      <div class="menu">
+        <input type="checkbox" id="menu-btn-check" />
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+          <ul>
+            <li>
+              <a href="#works">works</a>
+            </li>
+            <li>
+              <a href="#about">about</a>
+            </li>
+            <li>
+              <a href="#">and more</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="Tborder1"></div>
+      <div class="Tborder2_1"></div>
+      <div class="Tborder2_2"></div>
+      <div class="Tborder3"></div>
+      <div class="Tborder4"></div>
+      <div class="Tborder5"></div>
+      <div class="Tborder6"></div>
+      <div class="title">
+        <h1>Portfolio</h1>
+        <p>
+          @UGOK <br />
+          sample sample sample <br />
+          sample sample sample
+        </p>
+      </div>
+    </section>
+    <section id="works">
+      <h2>works</h2>
+      <h1>works</h1>
+      <p>the latest</p>
+      <img src="img/OneTimeReadMail.png" class="Wimg" />
+      <a href="./works.html" class="Warrow">and more</a>
+      <!--
+    <div>
+      <div id="slider" class="flexslider" style="
+            padding-top: 15%;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            background-color: #7FC8B4;
+            z-index: 0;
+          ">
+        <ul class="slides">
+          <li>
+            <img src="img/OneTimeReadMail.png" />
+          </li>
+          <li>
+            <img src="img/kari.png" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  -->
+    </section>
+    <section id="about">
+      <div class="Arect1"></div>
+      <div class="Arect2"></div>
+      <h1>about</h1>
+      <div class="Ap">
+        <p class="Ap1">
+          birthday <br />
+          belongs <br />
+          learning
+        </p>
+        <p class="Ap2">
+          - <br />
+          - <br />
+          -
+        </p>
+        <p class="Ap3">
+          2001.03.01<br />
+          university <br />
+          Adobe Illustrator <br />Adobe Premiere Pro <br />
+          HTML/CSS/.bubble <br />
+          etc
+        </p>
+      </div>
+      <h2>name</h2>
+      <div class="Aicon">
+        <img src="./img/u20.png" class="icon" />
+        <a href="about.html"><div class="mask">
+          <div class="caption">more</div>
+        </a>
+        </div>
+      </a>
+      </div>
+    </section>
+    <section id="kari">
+      <div></div>
+
+    </section>
+    <footer>
+      <small>@2021 Portfolio</small>
+    </footer>
+  </body>
+</html>
