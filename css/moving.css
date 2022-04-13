@@ -1,0 +1,168 @@
+.menu-btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  /* background-color: #3584bb; */
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #05384d;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ); /*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+.menu-content {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  left: 100%;
+  z-index: 80;
+  margin-top: 7%;
+  background-color: #fffbe8;
+  transition: all 0.5s;
+}
+.menu-content ul {
+  /* padding: 30% 10px 0; */
+  padding: 0 10px 0;
+}
+.menu-content ul li {
+  border-bottom: solid 1px #7fc8b4;
+  list-style: none;
+}
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: #05384d;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 150%;
+  font-weight: normal;
+}
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #7fc8b4;
+  border-right: solid 2px #7fc8b4;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+#menu-btn-check:checked ~ .menu-content {
+  left: 70%; /*メニューを画面内へ*/
+}
+.menu-content ul li a:hover {
+  border-left: solid 1.5px #05384d;
+  padding-left: 10px;
+  /* background-color: #05384d; */
+  color: #ef7c7f;
+}
+/* 矢印 */
+
+.Warrow {
+  /*矢印と下線の基点とするためrelativeを指定*/
+  position: relative;
+  /*形状*/
+  display: inline-block;
+  padding: 0 20px;
+  color: #fffbe8;
+  text-decoration: none;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 150%;
+
+  filter: drop-shadow(1px 1px 2px #2d826a);
+}
+
+/*矢印と下線の形状*/
+.Warrow::before {
+  content: "";
+  /*絶対配置で下線の位置を決める*/
+  position: absolute;
+  bottom: -8px;
+  left: 15%;
+  /*下線の形状*/
+  width: 85%;
+  height: 1px;
+  background: #fffbe8;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+}
+
+.Warrow::after {
+  content: "";
+  /*絶対配置で矢印の位置を決める*/
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  /*矢印の形状*/
+  width: 15px;
+  height: 1px;
+  background: #fffbe8;
+  transform: rotate(35deg);
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+}
+
+/*hoverした際の移動*/
+.Warrow:hover::before {
+  left: 30%;
+}
+
+.Warrow:hover::after {
+  right: -15%;
+}
+#works {
+  position: relative;
+}
+.Warrow {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
