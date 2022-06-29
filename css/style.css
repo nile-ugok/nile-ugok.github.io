@@ -311,7 +311,7 @@ body {
 #about .Aicon {
   position: absolute;
   bottom: 13%;
-  left: 55vw;
+  left: calc(65vw - 96.2px);
 }
 #about .icon {
   width: 25vh;
