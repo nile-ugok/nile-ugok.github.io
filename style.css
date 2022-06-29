@@ -1,0 +1,404 @@
+body {
+  margin: 0;
+  max-width: 1500px;
+}
+#top {
+  /* z-index: 0; */
+  width: 100vw;
+  height: 100vh;
+  background-color: #fffbe8;
+  position: relative;
+}
+
+/* トップページデザイン */
+.Tborder1 {
+  position: absolute;
+  top: 35%;
+  right: 50%;
+  /* transform: rotate(-15deg); */
+  width: 10vw;
+  height: 50vh;
+  transform: skewX(15deg);
+  background-color: #ef7c7f;
+}
+.Tborder2_1 {
+  position: absolute;
+  top: 0;
+  right: 20%;
+  /* transform: rotate(-15deg); */
+  width: 30vw;
+  height: 75vh;
+  transform: skewX(15deg);
+  /* margin: 0 auto; */
+  background-color: #7fc8b4;
+  background-image: linear-gradient(-90deg, #fffbe8 50%, transparent 50%);
+  background-size: 7% 5%;
+}
+.Tborder2_2 {
+  position: absolute;
+  top: 0;
+  right: 43%;
+  /* transform: rotate(-15deg); */
+  width: 7vw;
+  height: 75vh;
+  transform: skewX(15deg);
+  /* margin: 0 auto; */
+  background-color: #7fc8b4;
+}
+.Tborder3 {
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  /* transform: rotate(-15deg); */
+  width: 20vw;
+  height: 80vh;
+  transform: skewX(15deg);
+  background-color: #05384d;
+}
+.Tborder4 {
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+  /* transform: rotate(-15deg); */
+  width: 0.5vw;
+  height: 80vh;
+  transform: skewX(-30deg);
+  /* background-color: #7fc8b4; */
+  background-color: #fffbe8;
+  /* background-color: #fac650; */
+}
+.Tborder5 {
+  position: absolute;
+  bottom: 0;
+  right: -3%;
+  /* transform: rotate(-15deg); */
+  width: 0.5vw;
+  height: 80vh;
+  transform: skewX(-30deg);
+  background-color: #7fc8b4;
+  /* background-color: #fffbe8; */
+  /* background-color: #fac650; */
+}
+.Tborder6 {
+  position: absolute;
+  top: 0;
+  left: -5%;
+  /* transform: rotate(-15deg); */
+  width: 0.5vw;
+  height: 80vh;
+  transform: skewX(-30deg);
+  /* background-color: #7fc8b4; */
+  /* background-color: #000; */
+  background-color: #fac650;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 40vw;
+  height: 30vh;
+  /* background-color: #b8d252; */
+}
+#top h1 {
+  font-family: "Grape Nuts", cursive;
+  font-size: 700%;
+  font-weight: normal;
+  width: 100%;
+  height: 45%;
+  /* background-color: #6bb8d9; */
+  margin: 0;
+}
+#top p {
+  font-family: "Raleway", sans-serif;
+  font-size: 200%;
+  margin-top: 5%;
+  margin-left: 45%;
+  /* background-color: #7fc8b4; */
+}
+
+#works {
+  width: 100vw;
+  height: 100vh;
+  background-color: #7fc8b4;
+  position: relative;
+}
+#works h2 {
+  position: absolute;
+  top: 0;
+  right: 5vw;
+  font-family: "Grape Nuts", cursive;
+  font-size: 700%;
+  font-weight: normal;
+  color: #d2fee255;
+  margin: 0;
+  z-index: 1;
+}
+#works h1 {
+  position: absolute;
+  top: 3vh;
+  right: 10vw;
+  font-family: "Grape Nuts", cursive;
+  font-size: 700%;
+  font-weight: normal;
+  color: white;
+  margin: 0;
+  z-index: 2;
+}
+#works p {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: "Raleway", sans-serif;
+  font-size: 175%;
+  margin: 0;
+  /* text-align: center; */
+  color: #fffbe8;
+  border-bottom: solid #fffbe8 1px;
+  /* filter: drop-shadow(1px 1px 2px #05384d); */
+  filter: drop-shadow(1px 1px 2px #2d826a);
+}
+#works .Wimgback {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 780px;
+  height: 450px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  /* box-shadow: inset 1px 1px 3px 3px #05384d77; */
+  /* box-shadow: inset 2px 2px 7px 5px #05384d77; */
+  box-shadow: inset 0px 0px 7px 5px #43625988;
+  /* box-shadow: 0px 0px 7px 5px #43625988; */
+}
+#works .Wimg {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  /* border: solid white 15px; */
+  /* box-shadow: inset 0 10px 25px 0 #05384d; */
+  /* box-shadow: 0 0 5px 0 #05384d; */
+  /* max-width: 1200px; */
+  width: 750px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+#works .Wimg {
+  overflow: visible;
+  /* width: 100%; */
+  /* height: 100%; */
+}
+#works .Wimg {
+  display: block;
+  transition-duration: 0.5s;
+}
+#works .Wimg:hover {
+  box-shadow: 0px 0px 7px 5px #43625988;
+  transform: translateY(-500px);
+  transition-duration: 0.5s;
+  transform: translate(-50%, -50%);
+  width: 800px;
+}
+#about {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fffbe8;
+  position: relative;
+}
+
+.Arect1 {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 45vw;
+  height: 55vh;
+  background-color: #7fc8b488;
+  background-image: linear-gradient(
+    #fffbe8 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  background-size: 10% 10%;
+}
+
+/*
+.Arect1 {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 45vw;
+  height: 55vh;
+  transform: skewX(15deg);
+  background-color: #7fc8b4;
+  background-image: linear-gradient(180deg, #fffbe8 50%, transparent 50%);
+  background-size: 10% 10%;
+}
+*/
+/*
+.Arect1 {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 45vw;
+  height: 55vh;
+  background-color: #fffbe8;
+  background-image: linear-gradient(-90deg, #7fc8b433 50%, transparent 50%),
+    linear-gradient(#7fc8b433 50%, transparent 50%);
+  background-size: 20px 20px;
+}
+*/
+.Arect2 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 65vw;
+  height: 45vh;
+  background-color: #ef7c7f;
+}
+#about h1 {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  font-family: "Grape Nuts", cursive;
+  font-size: 700%;
+  font-weight: normal;
+  color: #fcbabb;
+  margin: 0;
+}
+#about p {
+  font-family: "Raleway", sans-serif;
+  font-size: 150%;
+  margin: 0;
+  /* color: #fffbe8; */
+  color: #3d0f11;
+  /* text-shadow: 0 0 1px #05384d; */
+  text-shadow: 0 0 0.5px #3d0f11;
+  /* color: #fcbabb; */
+}
+.Ap {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  /* width: 40%; */
+  height: auto;
+  display: flex;
+  /* background-color: #7fc8b4; */
+}
+.Aspan {
+  /* background-color: #2d826a; */
+  margin-left: 85%;
+}
+/*
+.Ap1 {
+  position: absolute;
+  top: 65%;
+  left: 15%;
+}
+.Ap3 {
+  position: absolute;
+  top: 65%;
+  left: 30%;
+}
+*/
+.Ap2 {
+  padding: 0 5%;
+}
+#about .Aicon {
+  position: absolute;
+  bottom: 13%;
+  left: calc(65vw - 96.2px);
+}
+#about .icon {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 25vh;
+  border: solid #fffbe8 7px;
+}
+.Aicon .caption {
+  font-family: "Raleway", sans-serif;
+  font-size: 150%;
+  text-align: center;
+  /* margin: 0; */
+  padding-top: 80px;
+  color: #3d0f11;
+  text-shadow: 0 0 0.5px #3d0f11;
+  mix-blend-mode: multiply;
+}
+.Aicon a {
+  text-decoration: none;
+}
+.Aicon .mask {
+  width: 100%;
+  height: 95%;
+  position: absolute; /* 絶対位置指定 */
+  top: -0;
+  left: 0;
+  opacity: 0; /* マスクを表示しない */
+  background-color: #fffbe8; /* マスクは半透明 */
+  border-radius: 25vh;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.Aicon:hover .mask {
+  opacity: 0.75; /* マスクを表示する */
+}
+#about .Aname {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  bottom: 38%;
+  left: 55vw;
+}
+#about h2 {
+  /* position: absolute; */
+  /* bottom: 37%; */
+  /* left: 62vw; */
+  font-family: "Raleway", sans-serif;
+  font-size: 200%;
+  font-weight: normal;
+  color: #3d0f11;
+  text-shadow: 0 0 0.5px #3d0f11;
+}
+#about .ATicon {
+  width: 15%;
+  color: #3d0f11;
+  padding-left: 10px;
+  margin-bottom: -3%;
+  /* background-color: #3d0f11; */
+}
+/*
+#about h2 {
+  position: absolute;
+  bottom: 37%;
+  left: 62vw;
+  font-family: "Raleway", sans-serif;
+  font-size: 200%;
+  font-weight: normal;
+  color: #3d0f11;
+  text-shadow: 0 0 0.5px #3d0f11;
+}
+*/
+
+#kari {
+  /* z-index: 0; */
+  width: 100vw;
+  height: 100vh;
+  background-color: #fffbe8;
+  position: relative;
+}
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  background-color: #7fc8b4;
+  text-align: center;
+  padding-top: 2vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 150%;
+  font-weight: normal;
+}
