@@ -52,9 +52,9 @@ header {
 #top .topvis {
   position: absolute;
   top: 15vh;
-  left: 10vw;
-  width: 35vw;
-  max-width: 450px;
+  left: 15vw;
+  width: 25vw;
+  max-height: 450px;
 }
 /* #top .vismemo {
   position: absolute;
@@ -68,7 +68,7 @@ header {
 } */
 
 #concept {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 #concept h1 {
   /* color: #905f69; */
@@ -96,7 +96,8 @@ header {
   font-size: xx-large;
   font-weight: light;
   text-align: center;
-  margin-bottom: -15vh;
+  /* margin-top: 100px; */
+  margin-bottom: -10vh;
 }
 #concept .conimg {
   width: 80vw;
