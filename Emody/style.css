@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("./img/back.svg");
+  background-attachment: fixed;
+
+  /* font-family: "Kiwi Maru", serif; */
+}
+header {
+  z-index: 50;
+  background-color: #ffd04e;
+  width: 100vw;
+  height: 5vh;
+  position: fixed;
+}
+
+#top {
+  z-index: 0;
+  height: 100vh;
+  /* background-image: url("./img/back.svg"); */
+  /* background-attachment: fixed; */
+  position: relative;
+}
+#top .top {
+  display: flex;
+}
+
+#top .logo {
+  position: absolute;
+  top: 25vh;
+  right: -5vw;
+  width: 75vw;
+}
+
+/* 
+#top .vismemo {
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  width: 25vw;
+  max-width: 250px;
+}
+
+#top .vistop {
+  position: absolute;
+  top: 30vh;
+  left: 5vw;
+  width: 25vw;
+  max-width: 250px;
+} */
+
+#top .topvis {
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+  width: 35vw;
+  max-width: 450px;
+}
+/* #top .vismemo {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 50%;
+}
+#top .vistop {
+  position: absolute;
+  width: 50%;
+} */
+
+#concept {
+  margin-top: 0;
+}
+#concept h1 {
+  /* color: #905f69; */
+  color: white;
+  -webkit-text-stroke: 1.5px #905f69;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -2vh;
+}
+#concept h2 {
+  color: #905f69;
+  /* font-size: xx-large; */
+  font-weight: light;
+  text-align: center;
+  margin-bottom: 20vh;
+  font-family: "Kiwi Maru", serif;
+}
+#concept p {
+  color: #905f69;
+  font-size: xx-large;
+  font-weight: light;
+  text-align: center;
+  margin-bottom: -15vh;
+}
+#concept .conimg {
+  width: 80vw;
+  margin-left: 10vw;
+  /* margin-right: auto; */
+}
+
+footer {
+  background-color: #ffd04e;
+  width: 100vw;
+  height: 10vh;
+}
+footer p {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-top: 3vh;
+}
+
+/*
+https://github.com/nile-ugok/Emody.git
+*/
